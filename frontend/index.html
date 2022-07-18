@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capturador de imagens e conversor para grayscale</title>
+</head>
+<body>
+  <h1>Capturador de imagens e conversor para grayscale</h1>
+  <br><br>
+  <label for="id_url">Digite a url:</label>
+  <input type="url" name="url" id="url" value="https://youtube.com">
+  <br>
+  <label for="estatica_dinamica"
+   title="O carregamento estatica faz com que a pagina busque imagens sem esperar o carregamento completo da mesma. Ele nao espera a pagina renderizar por completo.">
+   Carregar a pagina de forma estatica?
+  </label>
+  <input type="checkbox" name="estaticaDinamica" id="estaticaDinamica">
+  <br><br>
+
+  <button id='capturar' onclick="capturaArmazenaEImprime()">Capturar</button>
+
+  <div id="divSaida"></div>
+  <script src="ClientSocket.js"></script>
+</body>
+</html>

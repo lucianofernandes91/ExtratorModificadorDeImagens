@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mongoose": "^6.4.4",
+    "puppeteer": "^15.3.2"
+  }
+}
