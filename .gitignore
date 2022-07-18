@@ -104,4 +104,4 @@ dist
 .tern-port
 
 #Diretório das imagens
-.backend/uploads
+backend/uploads
