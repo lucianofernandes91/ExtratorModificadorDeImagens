@@ -68,13 +68,9 @@ server.on('connection', function(socket) {
       new mongo({
         url: url,
         caminho: pasta
-      }).save()
-        .then(()=>{
-            console.log('caminho'+url)
-            console.log('url '+pasta)
-        }).catch((err)=>{
-            console.log('ouve um erro')
-        })
+      }).save().catch((err)=>{
+        throw new Error(err);
+      })
 
       sk.send(saida.toString())
 

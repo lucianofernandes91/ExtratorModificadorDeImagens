@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "mogoose": "^0.0.1-security",
     "mongoose": "^6.4.4",
     "puppeteer": "^15.4.0",
     "ws": "^8.8.1"
